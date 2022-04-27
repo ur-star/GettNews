@@ -1,0 +1,121 @@
+"status": "ok",
+"totalResults": 978,
+"articles": [
+    {
+        "source": {
+            "id": "engadget",
+            "name": "Engadget"
+        },
+        "author": "Steve Dent",
+        "title": "Report suggests NVIDIA is preparing to walk away from its ARM acquisition",
+        "description": "NVIDIA has reportedly made little to no progress in gaining regulatory approval for its $40 billion purchase of ARM and is privately preparing to abandon the deal, according to Bloomberg's sources. Meanwhile, current ARM owner SoftBank is reportedly advancing…",
+        "url": "https://www.engadget.com/nvidia-privately-admits-arm-deal-might-not-go-through-123542854.html",
+        "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-11/bf30ce30-47cc-11ec-afea-de6f8cee260c",
+        "publishedAt": "2022-01-25T12:35:42Z",
+        "content": "NVIDIA has reportedly made little to no progress in gaining regulatory approval for its $40 billion purchase of ARM and is privately preparing to abandon the deal, according to Bloomberg's sources. M… [+2424 chars]"
+    },
+    {
+        "source": {
+            "id": "wired",
+            "name": "Wired"
+        },
+        "author": "Morgan Meaker",
+        "title": "The EU Has a Plan to Fix Internet Privacy: Be More Like Apple",
+        "description": "Lawmakers want all websites to use a similar “Ask App Not to Track” function, but Apple's system might not be as clear-cut as once believed.",
+        "url": "https://www.wired.com/story/eu-digital-services-act-apple/",
+        "urlToImage": "https://media.wired.com/photos/61ef508fe365ac4c3753094c/191:100/w_1280,c_limit/Business_EU%20Building-180405277.jpg",
+        "publishedAt": "2022-01-25T12:00:00Z",
+        "content": "Like millions of other internet users in Europe, when Alexandra Geese, a German member of the European Parliament (MEP), wants to read something on the internet, she first has to open and scroll thro… [+4012 chars]"
+    },
+    {
+        "source": {
+            "id": "ars-technica",
+            "name": "Ars Technica"
+        },
+        "author": "Samuel Axon",
+        "title": "Here’s what Apple might announce at a spring event this March",
+        "description": "An iPhone SE, new iPads, and more ARM Macs? All possible.",
+        "url": "https://arstechnica.com/gadgets/2022/01/heres-what-apple-might-announce-at-a-spring-event-this-march/",
+        "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2020/04/iPhone-SE-2020-front-760x380.jpeg",
+        "publishedAt": "2022-01-25T00:25:28Z",
+        "content": "Enlarge/ The 2020 iPhone SE.\r\n5 with 5 posters participating\r\nIt doesn't seem like that long ago that Apple announced a plethora of new iPhone, Apple Watch, and MacBook Pro computers, but we're likel… [+5321 chars]"
+    },
+    {
+        "source": {
+            "id": "reuters",
+            "name": "Reuters"
+        },
+        "author": null,
+        "title": "Swatch Group returns to profit, sees strong sales ahead - Reuters",
+        "description": "Swiss watchmaker Swatch Group <a href=\"https://www.reuters.com/companies/UHR.S\" target=\"_blank\">(UHR.S)</a> said it expected double-digit sales growth in local currencies this year after sales and profits recovered in 2021.",
+        "url": "https://www.reuters.com/business/retail-consumer/swatch-group-returns-profit-sees-strong-sales-ahead-2022-01-25/",
+        "urlToImage": "https://www.reuters.com/resizer/LQ-GqNJ-RYsvK3h6qwyAKULcM2g=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/AHNW3BPIWNK6ZGGFMSAOAQQLXY.jpg",
+        "publishedAt": "2022-01-25T06:21:00Z",
+        "content": "A Swatch logo is pictured in front of the newly built headquarters, designed by Japanese architect Shigeru Ban, of the brand owned by Swatch Group, in Biel, Switzerland October 3, 2019. Picture taken… [+1622 chars]"
+    },
+    {
+        "source": {
+            "id": "reuters",
+            "name": "Reuters"
+        },
+        "author": null,
+        "title": "Futures fall ahead of Fed meeting, corporate earnings - Reuters",
+        "description": "U.S. stock index futures fell on Tuesday following a turbulent start to the week, with investors keeping an eye out for the Federal Reserve meeting and a host of major earnings from companies including Microsoft.",
+        "url": "https://www.reuters.com/business/futures-fall-ahead-fed-meeting-corporate-earnings-2022-01-25/",
+        "urlToImage": "https://www.reuters.com/resizer/RoPfJAjw4caJaYbMRYbjYLFFIV8=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/QCX6WFFA4RPCHHWTOQM7E64SYQ.jpg",
+        "publishedAt": "2022-01-25T12:13:00Z",
+        "content": "Jan 25 (Reuters) - U.S. stock index futures fell on Tuesday following a turbulent start to the week, with investors keeping an eye out for the Federal Reserve meeting and a host of major earnings fro… [+2147 chars]"
+    },
+    {
+        "source": {
+            "id": "reuters",
+            "name": "Reuters"
+        },
+        "author": null,
+        "title": "JPMorgan agrees to acquire 49% stake in Greek fintech Viva Wallet - Reuters",
+        "description": "JPMorgan <a href=\"https://www.reuters.com/companies/JPM.N\" target=\"_blank\">(JPM.N)</a> said on Tuesday it had agreed to acquire an around 49% stake in Athens-based payments fintech Viva Wallet, subject to regulatory approvals.",
+        "url": "https://www.reuters.com/technology/jpmorgan-agrees-acquire-49-stake-greek-fintech-viva-wallet-2022-01-25/",
+        "urlToImage": "https://www.reuters.com/resizer/-YF6qU7MaB9xgS3vJbEYPnRUtho=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/BGXGJVF52ROJVFRKOY26Q3UUZA.jpg",
+        "publishedAt": "2022-01-25T11:42:00Z",
+        "content": "ATHENS, Jan 25 (Reuters) - JPMorgan (JPM.N) said on Tuesday it had agreed to acquire an around 49% stake in Athens-based payments fintech Viva Wallet, subject to regulatory approvals.\r\nFinancial term… [+2015 chars]"
+    },
+    {
+        "source": {
+            "id": "reuters",
+            "name": "Reuters"
+        },
+        "author": null,
+        "title": "Fed, Ukraine worries pressure stocks for third session - Reuters",
+        "description": "Emerging market shares fell sharply for a third straight session on Tuesday as the threat of Russia-Ukraine military conflict and wariness over U.S. monetary policy weighed on sentiment.",
+        "url": "https://www.reuters.com/markets/europe/fed-ukraine-worries-pressure-stocks-third-session-2022-01-25/",
+        "urlToImage": "https://www.reuters.com/pf/resources/images/reuters/reuters-default.png?d=69",
+        "publishedAt": "2022-01-25T09:43:00Z",
+        "content": "Jan 25 (Reuters) - Emerging market shares fell sharply for a third straight session on Tuesday as the threat of Russia-Ukraine military conflict and wariness over U.S. monetary policy weighed on sent… [+3085 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Entrepreneur"
+        },
+        "author": "Shawn P. Walchef",
+        "title": "It Takes a Village to Keep a Restaurant Open",
+        "description": "Interview with Leticia \"Skai\" Young (LoLo's Seafood Shack) about creating a community with her restaurant and using social media.",
+        "url": "https://www.entrepreneur.com/video/414041",
+        "urlToImage": "https://assets.entrepreneur.com/content/3x2/2000/1642627937-RI003-Screenshot.jpg",
+        "publishedAt": "2022-01-25T13:00:00Z",
+        "content": "Takeaways from this episode:\r\nBe Embedded in Your Community It takes a village to raise a child and it takes a village to keep a restaurant open. Despite dire situations tied to the pandemic, LoLos S… [+5571 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Hipertextual"
+        },
+        "author": "Nicolás Rivera",
+        "title": "Nvidia se rinde con ARM: esperan que la compra no salga adelante y preparan su salida a bolsa",
+        "description": "La compra de ARM por parte de Nvidia no saldrá adelante. Bloomberg informa que la empresa norteamericana está comunicando a sus socios que no esperan que la operación salga adelante. Además, Softbank, actual propietaria de ARM, estaría preparando la salida a …",
+        "url": "https://hipertextual.com/2022/01/nvidia-se-rinde-con-arm-esperan-que-la-compra-no-salga-adelante-y-preparan-su-salida-a-bolsa",
+        "urlToImage": "https://hipertextual.com/wp-content/uploads/2020/09/hipertextual-nvidia-compra-arm-disenador-procesadores-2020669143.jpg",
+        "publishedAt": "2022-01-25T12:07:08Z",
+        "content": "La compra de ARM por parte de Nvidia no llegará a buen puerto. Bloomberg informa que la empresa norteamericana ya está comunicando a sus socios que no esperan que la operación salga adelante. Además,… [+1846 chars]"
+    }
+]
