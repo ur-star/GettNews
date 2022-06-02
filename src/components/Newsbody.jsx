@@ -1,29 +1,42 @@
 import React, { Component } from "react";
 import NewsItems from "./NewsItems";
+import PropTypes from 'prop-types'
 
 export class Newsbody extends Component {
-  articles = [
-   
-  ];
+  static defaultProps = {
+      country: "in",
+      pagesize: 5,
+      category: "general",
+    }
+    static propTypes = {
+        country: PropTypes.string,
+        pagesize: PropTypes.number,
+        category: PropTypes.string,
+    }
   constructor() {
+   
     super();
     this.state = {
-      articles: this.articles,
+      articles: [],
+      // totalResults:0,
       loading:false,
       page: 1,
     };
   }
   async componentDidMount(){
-    let url=`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=da56685e2150488398fb5947b1ecc420&page=1&pageSize=${this.props.pagesize}`;
+    let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=da56685e2150488398fb5947b1ecc420&page=1&pageSize=${this.props.pagesize}`;
     let data = await fetch(url);
     let jsdata = await data.json();
-    // console.log(jsdata);
+    console.log(jsdata);
     // console.log(this.props.pagesize);
-  this.setState({articles: jsdata.articles, totalresults:jsdata.totalResults})
+    
+  this.setState({articles: jsdata.articles, totalResults:jsdata.totalResults})
+  // console.log(jsdata.totalResults);
+  // console.log(this.state.totalResults);
 }
 
    handlepreClick = async()=>{
-    let url=`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=da56685e2150488398fb5947b1ecc420&page=${this.state.page - 1}&pageSize=${this.props.pagesize}`;
+    let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=da56685e2150488398fb5947b1ecc420&page=${this.state.page - 1}&pageSize=${this.props.pagesize}`;
     let data = await fetch(url);
     let jsdata = await data.json();
  
@@ -39,7 +52,7 @@ export class Newsbody extends Component {
     }
     else{
       // console.log('inside else nxtclick');
-      let url=`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=da56685e2150488398fb5947b1ecc420&page=${this.state.page + 1}&pageSize=${this.props.pagesize}`;
+      let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=da56685e2150488398fb5947b1ecc420&page=${this.state.page + 1}&pageSize=${this.props.pagesize}`;
       let data = await fetch(url);
       let jsdata = await data.json();
    
