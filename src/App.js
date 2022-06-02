@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       {/* <h1>Hellowald</h1> */}
       <Navbar/>
-      <Newsbody pagesize={6}/>
+      <Newsbody pagesize={12} country="in" category="science"/>
     </div>
   );
 }
