@@ -79,7 +79,7 @@ export class Newsbody extends Component {
             return (
               <div className="col-md-4" key={ele.url}>
                 <NewsItems
-                  imageUrl={ele.urlToImage}
+                  imageUrl={ele.urlToImage?ele.urlToImage:require('../error404.jpg')}
                   title={ele.title?ele.title:"There is an intersting News"}
                   url={ele.url}
                 />
