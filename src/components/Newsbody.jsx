@@ -94,7 +94,11 @@ export class Newsbody extends Component {
                     ele.urlToImage ? ele.urlToImage : require("../error404.jpg")
                   }
                   title={ele.title ? ele.title : "There is an intersting News"}
+                  description={ele.description?ele.description:"There is an intersting News here you can read more"}
                   url={ele.url}
+                  author={ele.author?ele.author:"Unknown"}
+                  date={ele.publishedAt?ele.publishedAt:"Unknown"}
+                  sourcename={ele.source.name}
                 />
               </div>
             );
