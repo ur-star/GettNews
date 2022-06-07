@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import NewsItems from "./NewsItems";
 import PropTypes from "prop-types";
+// require('dotenv').config();
 
 export class Newsbody extends Component {
   static defaultProps = {
@@ -13,76 +14,92 @@ export class Newsbody extends Component {
     pagesize: PropTypes.number,
     category: PropTypes.string,
   };
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       articles: [],
       // totalResults:0,
       loading: false,
       page: 1,
     };
+    document.title = this.props.category + "--GettNews";
   }
-  async componentDidMount() {
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=da56685e2150488398fb5947b1ecc420&page=1&pageSize=${this.props.pagesize}`;
+  async updateNews() {
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=da56685e2150488398fb5947b1ecc420&page=${this.state.page}&pageSize=${this.props.pagesize}`;
     let data = await fetch(url);
     let jsdata = await data.json();
-    console.log(jsdata);
-    // console.log(this.props.pagesize);
 
     this.setState({
       articles: jsdata.articles,
       totalResults: jsdata.totalResults,
     });
-    // console.log(jsdata.totalResults);
-    // console.log(this.state.totalResults);
+  }
+  async componentDidMount() {
+    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=da56685e2150488398fb5947b1ecc420&page=1&pageSize=${this.props.pagesize}`;
+    // let data = await fetch(url);
+    // let jsdata = await data.json();
+    // console.log(jsdata);
+    // // console.log(this.props.pagesize);
+
+    // this.setState({
+    //   articles: jsdata.articles,
+    //   totalResults: jsdata.totalResults,
+    // });
+    // // console.log(jsdata.totalResults);
+    // // console.log(this.state.totalResults);
+    this.updateNews();
   }
 
   handlepreClick = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?country=${
-      this.props.country
-    }&category=${
-      this.props.category
-    }&apiKey=da56685e2150488398fb5947b1ecc420&page=${
-      this.state.page - 1
-    }&pageSize=${this.props.pagesize}`;
-    let data = await fetch(url);
-    let jsdata = await data.json();
+    // let url = `https://newsapi.org/v2/top-headlines?country=${
+    //   this.props.country
+    // }&category=${
+    //   this.props.category
+    // }&apiKey=da56685e2150488398fb5947b1ecc420&page=${
+    //   this.state.page - 1
+    // }&pageSize=${this.props.pagesize}`;
+    // let data = await fetch(url);
+    // let jsdata = await data.json();
 
-    this.setState({
-      page: this.state.page - 1,
-      articles: jsdata.articles,
-    });
+    // this.setState({
+    //   page: this.state.page - 1,
+    //   articles: jsdata.articles,
+    // });
+    this.setState({ page: this.state.page - 1 });
+    this.updateNews();
   };
 
   handlenxtClick = async () => {
-    if (
-      Math.ceil(this.state.totalresults / this.props.pagesize) <
-      this.state.page + 1
-    ) {
-      // console.log('inside if nextclick');
-    } else {
-      // console.log('inside else nxtclick');
-      let url = `https://newsapi.org/v2/top-headlines?country=${
-        this.props.country
-      }&category=${
-        this.props.category
-      }&apiKey=da56685e2150488398fb5947b1ecc420&page=${
-        this.state.page + 1
-      }&pageSize=${this.props.pagesize}`;
-      let data = await fetch(url);
-      let jsdata = await data.json();
+    // if (
+    //   Math.ceil(this.state.totalresults / this.props.pagesize) <
+    //   this.state.page + 1
+    // ) {
+    //   // console.log('inside if nextclick');
+    // } else {
+    //   // console.log('inside else nxtclick');
+    //   let url = `https://newsapi.org/v2/top-headlines?country=${
+    //     this.props.country
+    //   }&category=${
+    //     this.props.category
+    //   }&apiKey=da56685e2150488398fb5947b1ecc420&page=${
+    //     this.state.page + 1
+    //   }&pageSize=${this.props.pagesize}`;
+    //   let data = await fetch(url);
+    //   let jsdata = await data.json();
 
-      this.setState({
-        page: this.state.page + 1,
-        articles: jsdata.articles,
-      });
-    }
+    //   this.setState({
+    //     page: this.state.page + 1,
+    //     articles: jsdata.articles,
+    //   });
+    // }
+    this.setState({ page: this.state.page + 1 });
+    this.updateNews();
   };
 
   render() {
     return (
       <div className="container my-4">
-        <h2>Top Headlines</h2>
+        <h2>Top {this.props.category} Headlines</h2>
 
         <hr />
         <div className="row my-4">
@@ -94,10 +111,14 @@ export class Newsbody extends Component {
                     ele.urlToImage ? ele.urlToImage : require("../error404.jpg")
                   }
                   title={ele.title ? ele.title : "There is an intersting News"}
-                  description={ele.description?ele.description:"There is an intersting News here you can read more"}
+                  description={
+                    ele.description
+                      ? ele.description
+                      : "There is an intersting News here you can read more"
+                  }
                   url={ele.url}
-                  author={ele.author?ele.author:"Unknown"}
-                  date={ele.publishedAt?ele.publishedAt:"Unknown"}
+                  author={ele.author ? ele.author : "Unknown"}
+                  date={ele.publishedAt ? ele.publishedAt : "Unknown"}
                   sourcename={ele.source.name}
                 />
               </div>
@@ -116,7 +137,7 @@ export class Newsbody extends Component {
           <button
             type="button"
             disabled={
-              Math.ceil(this.state.totalresults / this.props.pagesize) >
+              Math.ceil(this.state.totalResults / this.props.pagesize) <
               this.state.page + 1
             }
             className="btn btn-dark"
