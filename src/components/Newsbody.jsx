@@ -103,7 +103,7 @@ export class Newsbody extends Component {
 
   render() {
     return (
-      <div className="container my-4">
+      <div className="container " style={{marginTop:"90px"}}>
         <h2>Top {this.props.category} Headlines</h2>
 
         <hr />
